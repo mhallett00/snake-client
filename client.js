@@ -12,7 +12,16 @@ const connect = function() {
     console.log('Server says: ', data);
   });
 
+  conn.on('connect', () => {
+    console.log('Connected Successfully!');
+  });
+
+  conn.on('connect', () => {
+    conn.write('Name: PLZ');
+  });
+
   return conn;
 }
 
-module.exports = connect;
+
+module.exports = { connect };
