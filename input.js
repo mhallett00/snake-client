@@ -31,11 +31,11 @@ const handleUserInput = () => {
     if (key === 'd') {
       connection.write('Move: right');
     }
+
+    if (key === 'q') {
+      connection.write('Say: THE DISRESPECT');
+    }
   });
-
-
-
-
 }
 
 module.exports = { setupInput }
