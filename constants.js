@@ -1,6 +1,6 @@
-const IP = '135.23.222.148';
+const IP = "localhost";
 const PORT = 50541;
-const NAME = 'Name: PLZ';
+const NAME = "Name: PLZ";
 
 module.exports = {
   IP,
